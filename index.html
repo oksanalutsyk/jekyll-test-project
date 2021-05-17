@@ -1,11 +1,12 @@
 ---
+title: My Home
 ---
 
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Home</title>
+    <title>{{page.title}}</title>
   </head>
   <body>
     {% include header.html %}
@@ -13,6 +14,8 @@
     {% include main.html %}
 
     {% include footer.html %}
+
+    <script src="script.js"></script>
 
   </body>
 </html>
