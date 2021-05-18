@@ -1,2 +1,8 @@
 <h1>{{ "List:" | capitalize }}</h1>
 {% include list.html %}
+
+{% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
